@@ -1,0 +1,259 @@
+body, html {
+  background-color: #EFEFEF;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #2F2F2F;
+  color: #838383;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1px;
+  padding-left: 12px;
+}
+
+.navbar {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.navbar img{
+  padding-bottom: 3px;
+}
+
+.navbar p {
+  align-items: center;
+  display: flex;
+  font-size: 1.3em;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px;
+  vertical-align: baseline;
+}
+
+.title {
+  display: inline-flex;
+  font-size: 2.5em;
+  padding-right: 20px;
+  color: #FFFFFF;
+}
+
+.dogIcon {
+  padding-top: .9em;
+}
+
+.adminUserName {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: #6BB4FB;
+}
+
+.adminUserName img {
+  padding: 1em .2em;
+}
+
+.sharing {
+  padding-top: 1.5em;
+  background-color: #EFEFEF;
+  display: block;
+  font-size: 1.5em;
+  color: #636363;
+}
+
+.sharing h2 {
+  margin: auto;
+  padding: 0 0 .9em .4em;
+}
+
+.allCards {
+  align-items: center;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+
+.card {
+  background-color: #FFF;
+  box-shadow: 0px 2px 2px 2px #ccc;
+  height: 60%;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.card-top {
+  background-image: url(images/indySmall.jpg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-top img{
+  height: 20%;
+  padding: 8px 0 0 5px;
+}
+
+.one {
+  background-blend-mode: multiply;
+  background-color: grey;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+}
+
+.one:hover {
+  background-blend-mode: normal;
+}
+
+.views {
+  display: inline;
+  margin: none;
+}
+
+.views p {
+  color: #FFF;
+  margin: 0;
+  padding: 10px 10px 0 0;
+}
+
+.view-number {
+  font-size: 1.5em;
+  padding: 2px 5px;
+}
+
+.card-body p {
+  padding-left: 10px;
+}
+
+.name {
+  color: #606060;
+  font-size: 1.1em;
+  margin-top: 5px;
+  padding-left: 1.4em;
+}
+
+.dateTime {
+  color: #606060;
+  font-size: .8em;
+  padding-left: 1.8em;
+}
+
+.urlBox {
+  background-color: #EEEFEF;
+  color: #838383;
+  display: flex;
+  font-size: .8em;
+  justify-content: center;
+  margin: 0 1.8em 0 1.8em;
+}
+
+.URL {
+  background-color: #EFEFEF;
+  color: #FFFFFF;
+  font-size: .8em;
+  overflow-wrap: break-word;
+  padding: 8px;
+  width: 80%;
+}
+
+.favToy {
+  color: #606060;
+  font-size: 1em;
+  padding-left: 1.5em;
+}
+
+.stuff{
+  color: #606060;
+  padding-left: 1.5em;
+}
+
+.attachmentsBox {
+  margin-top: 10px;
+  padding-left: 1.5em;
+}
+
+.attachments p {
+  color: #606060;
+  margin-top: 5px; 
+  padding-left: 1.5px;
+}
+
+.attachmentsNumber {
+  color: #6BB2FB;
+  font-size: 1.5em;
+  padding-left: 1.5px;
+}
+
+@media (min-width: 320px) {
+  .one {
+    height: 50%;
+  }
+}
+
+@media (min-width: 500px) {
+
+  .nav {
+    justify-content: space-around;
+  }
+  .navbar {
+    flex-direction: row;
+    font-size: 2em
+  }
+
+  .navbar {
+    font-size: 1.1em;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 48%;
+  }
+
+  .one {
+    height: 40%;
+  }
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    margin: 0 20px;
+  }
+
+  .card {
+    width: 32%;
+  }
+
+  .one {
+    height: 40%;
+  }
+}
+
+@media (min-width: 950px) {
+
+  .card-top img {
+    height: 18%;
+  }
+
+  .card {
+    width: 24%;
+  }
+
+  .one {
+    height: 40%;
+  }
+}
